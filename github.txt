@@ -1,0 +1,111 @@
+Here's how to make commits using VS Code's integrated terminal:
+
+## Open VS Code Terminal
+- Press `Ctrl+`` (backtick) or go to Terminal → New Terminal
+
+## Basic Git Workflow Commands
+
+### 1. Check Repository Status
+```bash
+git status
+```
+Shows which files are modified, staged, or untracked.
+
+### 2. Stage Files for Commit
+```bash
+# Stage a specific file
+git add filename.js
+
+# Stage multiple files
+git add file1.js file2.css file3.html
+
+# Stage all changes in current directory
+git add .
+
+# Stage all changes in the entire repository
+git add -A
+```
+
+### 3. Make a Commit
+```bash
+# Commit with inline message
+git commit -m "Your commit message here"
+
+# Commit with detailed message (opens editor)
+git commit
+
+# Stage and commit in one command
+git commit -am "Message for all tracked files"
+```
+
+### 4. Push to GitHub
+```bash
+# Push to main branch
+git push origin main
+
+# Push to current branch
+git push
+
+# First time pushing a new branch
+git push -u origin branch-name
+```
+
+## Example Incremental Commit Workflow
+
+```bash
+# Check what's changed
+git status
+
+# Stage the files you want to commit
+git add src/components/Header.js
+git add styles/main.css
+
+# Make the commit
+git commit -m "Update header component and main styles"
+
+# Push to GitHub
+git push
+```
+
+## Useful Commands for Incremental Development
+
+```bash
+# View commit history
+git log --oneline
+
+# See differences before staging
+git diff
+
+# See differences of staged files
+git diff --staged
+
+# Unstage a file
+git reset filename.js
+
+# Amend the last commit (if you forgot something)
+git commit --amend -m "Updated commit message"
+```
+
+## Quick Commit Aliases (Optional)
+Add these to your terminal for faster commits:
+
+```bash
+# In the terminal, create shortcuts
+git config --global alias.ac "commit -am"
+git config --global alias.st "status"
+git config --global alias.co "checkout"
+
+# Now you can use:
+git st          # instead of git status
+git ac "message" # instead of git commit -am "message"
+```
+
+## Authentication Setup
+If this is your first time, configure your credentials:
+
+```bash
+git config --global user.name "apoorva00100"
+git config --global user.email "your-email@domain.com"
+```
+
+The terminal approach gives you full control over your commits and is great for learning Git fundamentals while coding!

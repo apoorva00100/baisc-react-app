@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #444;
+}
+
+input,
+select,
+input[type="range"] {
+  display: block;
+  width: 80%;
+  margin: 5px auto 15px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input[type="range"] {
+  height: 25px;
+}
+
+button {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  color: red;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+
+/* Container remains same */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* For each label + input pair: use flex row, center horizontally */
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; /* space between label text and input */
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Inputs inside labels get fixed width */
+label input,
+label select,
+label input[type="range"] {
+  width: 250px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* For range slider, a bit different height */
+label input[type="range"] {
+  height: 25px;
+  width: 250px;
+}
+
+/* Center the entire form */
+form {
+  text-align: center;
+}
+
+/* Center the button */
+button {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 300px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Errors under the fields, centered */
+p {
+  color: red;
+  font-size: 0.9rem;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+
+label {
+  display: flex;
+  justify-content: flex-start; /* align children left */
+  align-items: center;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #444;
+  font-size: 1rem;
+}
+
+/* The label text part */
+label > span {
+  display: inline-block;
+  width: 120px;   /* fixed width for all labels */
+  text-align: right;
+  margin-right: 15px; /* gap between label text and input */
+}
+
+/* Inputs take remaining space and fixed width */
+label input,
+label select,
+label input[type="range"] {
+  flex-grow: 1;
+  max-width: 250px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Range slider styling */
+label input[type="range"] {
+  height: 25px;
+  max-width: 250px;
+}
