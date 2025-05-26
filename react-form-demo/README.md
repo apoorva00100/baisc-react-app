@@ -13,10 +13,10 @@ A modern two-page form application built with React and Tailwind CSS, featuring 
 ## Screenshots
 
 ### Form Page
-![Form Page Screenshot](./react-form-demo\Screenshot 2025-05-26 193536.png)
+![Form Page Screenshot](./Screenshot 2025-05-26 193536.png)
 
 ### Summary Page
-![Summary Page Screenshot](./react-form-demo\Screenshot 2025-05-26 193615.png)
+![Summary Page Screenshot](./Screenshot 2025-05-26 193615.png)
 
 ## Getting Started
 
